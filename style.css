@@ -9,7 +9,7 @@
     background: red;
     margin: 5px;
     color: white;
-    display: hidden;
+    display: none;
 }
 
 
@@ -22,4 +22,69 @@
     background: yellow;
     margin: 5px;
     padding: 5px;
+}
+
+
+/* jQuery - CSS */
+
+.vkl {
+    float: left;
+    width: 140px;
+    height: 28px;
+    background: #E5BA83;
+    color: white;
+    font-size: 20px;
+    border-right: 1px solid white;
+    padding-left: 10px;
+}
+
+#content {
+    width: 603px;
+    height: 100px;
+    background: #CCA675;
+}
+
+.selected {
+    background: #CCA675;
+}
+
+
+/* Урок 5. Методы для работы с html */
+
+#red_sk {
+    width: 700px;
+    height: 100px;
+    background: red;
+}
+
+.yellow_square {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background: yellow;
+    margin: 5px;
+}
+
+
+/* Урок 6. Методы для работы с атрибутами и фильтрами */
+
+#board {
+    width: 400px;
+}
+
+.s_kl,
+.t_kl {
+    width: 50px;
+    height: 50px;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+.s_kl {
+    background: #ff33ff;
+}
+
+.t_kl {
+    background: #000000;
 }

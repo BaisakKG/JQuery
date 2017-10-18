@@ -43,3 +43,40 @@ function addColor3() {
     $("tr:odd").css("background-color", "blue");
     $("td:gt(5)").css("color", "yellow");
 }
+
+// jQuery - CSS
+function chang(s) {
+    $('.selected').removeClass('selected');
+    $(s).addClass('selected');
+}
+// Урок 5. Методы для работы с html
+
+function addHtml() {
+    var tp1 = $("#p1").text();
+    $("#p2").text(tp1);
+}
+
+function addYellowSquare() {
+    $("#red_sk").prepend("<div class='yellow_square'></div>");
+}
+
+function addSpisok() {
+    var jq = $('#user_text').val();
+    $('#jq').append('<li>' + jq + '</li>');
+}
+
+// Урок 6. Методы для работы с атрибутами и фильтрами
+function addBoard() {
+    for (var i = 0; i < 8; i++) {
+        for (var j = 0; j < 8; j++) {
+            if ((i % 2 == 0 && j % 2 == 0) || (i % 2 != 0 && j % 2 != 0)) {
+                $("#board").append('<div class="s_kl"></div>');
+            } else $("#board").append('<div class="t_kl"></div>');
+        }
+    }
+}
+
+function addDraughts() {
+    $("div").filter(".t_kl").slice(0, 12).append('<img src="smile.jpg">');
+    $("div").filter(".t_kl").slice(20, 32).append('<img src="ungry.jpg">');
+}
